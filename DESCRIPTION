@@ -14,5 +14,7 @@ LazyData: true
 Imports: 
     checkmate,
     ggplot2,
-    stats,
-    testthat
+    stats
+Config/testthat/edition: 3
+Suggests: 
+    testthat (>= 3.0.0)
