@@ -2,6 +2,13 @@
 
 export(llreg)
 export(pctchg)
+export(theme_3pac)
 importFrom(checkmate,assertNumeric)
 importFrom(checkmate,assert_data_frame)
+importFrom(ggplot2,element_blank)
+importFrom(ggplot2,element_line)
+importFrom(ggplot2,element_text)
+importFrom(ggplot2,margin)
+importFrom(ggplot2,theme)
+importFrom(ggplot2,theme_bw)
 importFrom(stats,lm)
