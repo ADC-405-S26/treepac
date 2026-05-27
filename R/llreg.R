@@ -1,4 +1,4 @@
-#' log-log regression
+#' Log-Log Regression
 #'
 #' @description
 #' A quick way to estimate elasticity between 2 variables.
@@ -19,5 +19,5 @@ llreg <- function(df, x, y)
   checkmate::assertNumeric(df[[x]])
   checkmate::assertNumeric(df[[y]])
 
-  summary(lm(log(df[[y]]) ~ log(df[[x]]), data = df))
+  summary(lm(log(df[[y]]) ~ log(df[[x]])))
 }

@@ -1,4 +1,4 @@
-#' theme_3pac: A Clean ggplot2 Theme
+#' A Clean ggplot2 Theme
 #'
 #' @description
 #' `theme_3pac` is a function based on `theme_bw`, meant to improve the visual clarity of `ggplot` objects.

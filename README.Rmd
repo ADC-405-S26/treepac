@@ -1,0 +1,85 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# treepac
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+`treepac` is a collection of 3 functions (and a demonstration dataset) aimed to streamline repetitive tasks in exploratory data analyses, so users can quickly arrive at meaningful conclusions from their data.
+
+## Installation
+
+You can install the development version of treepac from [GitHub](https://github.com/) with:
+
+``` r
+install.packages("remotes")
+install.packages("devtools")
+devtools::install_github("ADC-405-S26/treepac")
+```
+
+Once you have installed the package, remember to invoke it in your environment:
+
+```{r setup}
+library(treepac)
+```
+
+
+## Examples
+
+This section contains some examples of what you can do with the provided functions:
+
+* `llreg()`
+* `pctchg()`
+* `theme_3pac()`
+
+### `llreg`
+
+This function is supposed to show the elasticity between 2 variables (in other words, the linear relationship between the natural log of y and the natural log of x):
+
+```{r}
+# the function takes 3 arguments
+# treedat is the package's dataset
+# remember to pass the column names in quotes!
+llreg(treedat, "x", "y")
+```
+
+### `pctchg`
+
+This function takes 2 arguments, a dataframe, and a numeric column within it and returns an additional column that shows the entry-to-entry percentage changes of the target column:
+
+```{r}
+treedatgr <- pctchg(treedat, 'x')
+# the output df contains an additional column:
+# pctchg_x
+head(treedatgr, 6)
+
+```
+
+### `theme_3pac()`
+This is a ggplot2 theme based off of `theme_bw()`. Atop the theme, a few changes were made to improve visual clarity and legibility:
+
+```{r}
+library(ggplot2)
+
+ggplot(data = treedat, aes(x = x, y = y, col = z)) +
+  geom_point() +
+  geom_smooth(se = FALSE) +
+  labs(title = 'Example scatter with spline fitting',
+       subtitle = 'theme_3pac() example',
+       caption = 'Data were randomly generated and are not reflective of any real-life trend') +
+  theme_3pac()
+```
+

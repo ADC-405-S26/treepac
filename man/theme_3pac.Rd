@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_3pac.R
 \name{theme_3pac}
 \alias{theme_3pac}
-\title{theme_3pac: A Clean ggplot2 Theme}
+\title{A Clean ggplot2 Theme}
 \usage{
 theme_3pac(base_size = 12, base_family = "sans")
 }

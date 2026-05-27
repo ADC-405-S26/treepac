@@ -3,7 +3,7 @@
 \docType{data}
 \name{treedat}
 \alias{treedat}
-\title{Treedat}
+\title{A Simple Demonstration Dataset}
 \format{
 \subsection{\code{treedat}}{
 
@@ -20,6 +20,6 @@ A data frame with 100 rows and 4 columns:
 treedat
 }
 \description{
-A dataframe to motivate the treepac's available functions.
+A dataframe to motivate the package's available functions.
 }
 \keyword{datasets}

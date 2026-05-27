@@ -2,7 +2,7 @@
 % Please edit documentation in R/llreg.R
 \name{llreg}
 \alias{llreg}
-\title{log-log regression}
+\title{Log-Log Regression}
 \usage{
 llreg(df, x, y)
 }

@@ -1,7 +1,7 @@
-#' @title Treedat
+#' @title A Simple Demonstration Dataset
 #'
 #' @description
-#' A dataframe to motivate the treepac's available functions.
+#' A dataframe to motivate the package's available functions.
 #'
 #'
 #'
