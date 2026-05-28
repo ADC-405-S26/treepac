@@ -9,15 +9,15 @@ llreg(df, x, y)
 \arguments{
 \item{df}{data frame containing the variables of interest}
 
-\item{x}{predictor / explanatory variable, passed in quotes}
+\item{x}{\strong{positive} predictor / explanatory variable, passed in quotes}
 
-\item{y}{response variable, passed in quotes}
+\item{y}{\strong{positive} response variable, passed in quotes}
 }
 \value{
 elasticity, intercept, standard error, and p-value estimates from the regression output
 }
 \description{
-A quick way to estimate elasticity between 2 variables.
+A quick way to estimate elasticity between 2 \strong{positive} variables.
 }
 \examples{
 llreg(mtcars, 'mpg', 'cyl')

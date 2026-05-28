@@ -29,9 +29,9 @@ library(treepac)
 This section contains some examples of what you can do with the provided
 functions:
 
-- [`llreg()`](reference/llreg.md)
-- [`pctchg()`](reference/pctchg.md)
-- [`theme_3pac()`](reference/theme_3pac.md)
+- [`llreg()`](https://adc-405-s26.github.io/treepac/reference/llreg.md)
+- [`pctchg()`](https://adc-405-s26.github.io/treepac/reference/pctchg.md)
+- [`theme_3pac()`](https://adc-405-s26.github.io/treepac/reference/theme_3pac.md)
 
 ### `llreg`
 
