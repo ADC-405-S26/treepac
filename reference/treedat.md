@@ -1,6 +1,10 @@
 # A Simple Demonstration Dataset
 
-A dataframe to motivate the package's available functions.
+A dataframe to motivate the package's available functions, generated
+using R's random sampling functions. Specifically, x is supposed to
+increase exponentially over time, and y's natural log is linearly
+related to x's natural log. The code used to generate the dataset is
+available in `treepac`'s source code.
 
 ## Usage
 

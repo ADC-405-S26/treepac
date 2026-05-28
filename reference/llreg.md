@@ -1,6 +1,6 @@
 # Log-Log Regression
 
-A quick way to estimate elasticity between 2 variables.
+A quick way to estimate elasticity between 2 **positive** variables.
 
 ## Usage
 
@@ -16,11 +16,11 @@ llreg(df, x, y)
 
 - x:
 
-  predictor / explanatory variable, passed in quotes
+  **positive** predictor / explanatory variable, passed in quotes
 
 - y:
 
-  response variable, passed in quotes
+  **positive** response variable, passed in quotes
 
 ## Value
 
